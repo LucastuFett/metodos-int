@@ -6,8 +6,12 @@ from scipy.stats import norm
 
 class Trapecios(Scene):
     def construct(self):
-        intervalo_A = -1
-        intervalo_B = 1
+        intervalo_A = float(input("Ingrese el intervalo A: "))
+        intervalo_B = float(input("Ingrese el intervalo B: "))
+        ##datos random con distrib normal // aca ingresarian los datos del usuario
+        datos_muestreados = np.random.normal(loc=0, scale=1, size=1000)
+
+
         ax = Axes(
             x_range=[intervalo_A - 1, intervalo_B + 1, 1],
             y_range=[0, 1, 0.5],
@@ -15,9 +19,6 @@ class Trapecios(Scene):
             axis_config={"include_numbers": True},
         )
         self.play(Create(ax))
-
-        ##datos random con distrib normal // aca ingresarian los datos del usuario
-        datos_muestreados = np.random.normal(loc=0, scale=1, size=1000)
 
         media = np.mean(datos_muestreados) # calcula la media
         desviacion_estandar = np.std(datos_muestreados) ## calcula la desviac (chequear CUAL formula usa)

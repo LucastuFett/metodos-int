@@ -24,7 +24,13 @@ Con Chocolatey instalado, correr los siguientes comandos en un cmd como Administ
   choco install numpy
 ```
 
-Luego, en Visual Studio, instalar la extensión Manim Sideview:
+Para poder ver las animaciones, hay dos opciones, la primera (si tiene datos de entrada, la única) es correr el comando:
+
+```bash
+  manim -pql <archivo.py> <Clase>
+```
+
+La otra manera es, en Visual Studio, instalar la extensión Manim Sideview:
 
 ```bash
   https://marketplace.visualstudio.com/items?itemName=Rickaym.manim-sideview
