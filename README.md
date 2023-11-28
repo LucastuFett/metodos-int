@@ -20,6 +20,7 @@ Con Chocolatey instalado, correr los siguientes comandos en un cmd como Administ
 
 ```bash
   choco install manimce
+  choco install miktex.install
   choco install scipy
   choco install numpy
 ```

@@ -54,7 +54,7 @@ class Trapecios(Scene):
         sigma.set_x(-3)
         sigma.set_y(2)        
         
-        ar = MathTex(fr"\int_{{{intervalo_A}}}^{{{intervalo_B}}} f(x) dx = ", str(round(integrate.quad(lambda x : distribucion_normal(x),intervalo_A, intervalo_B)[0],3)))
+        ar = MathTex(fr"\int_{{{round(intervalo_A)}}}^{{{round(intervalo_B)}}} f(x) dx = ", str(round(integrate.quad(lambda x : distribucion_normal(x),intervalo_A, intervalo_B)[0],3)))
         ar.scale(1)
         ar.set_x(3)
         ar.set_y(2)
@@ -83,7 +83,7 @@ class Trapecios(Scene):
             x = np.arange(intervalo_A, intervalo_B,dx)
             y = [distribucion_normal(a) for a in x]
 
-            area = MathTex(fr"\int_{{{intervalo_A}}}^{{{intervalo_B}}} Trapecios = ",str(round(integrate.trapezoid(y,x),3)))
+            area = MathTex(fr"\int_{{{round(intervalo_A)}}}^{{{round(intervalo_B)}}} Trapecios = ",str(round(integrate.trapezoid(y,x),3)))
             area.scale(0.9)
             area.set_x(3)
             area.set_y(0.8)
