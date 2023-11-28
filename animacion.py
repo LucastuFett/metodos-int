@@ -18,7 +18,6 @@ class Rectangulos(Scene):
             return -0.25*(x-3)**4 + 3*(x-3)**2 + x - 2
     
         graph = ax.plot(lambda x: f(x), x_range=[-1, 7], color=RED)
-        ejex = ax.plot(lambda x: 0, x_range=[-1, 7], color=BLUE)
         self.play(Create(graph))
 
         t = MathTex(r"f(x) = -0.25(x-3)^4 + 3(x-3)^2 + x - 2")
@@ -81,25 +80,25 @@ class Rectangulos(Scene):
             self.play(
                 Transform(
                     rects[0], rects[i],
-                    run_time=1,
+                    run_time=2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     areas[0][1], areas[i][1],
-                    run_time=1,
+                    run_time=2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     errores[0][1], errores[i][1],
-                    run_time=1,
+                    run_time=2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     ns[0][1], ns[i][1],
-                    run_time=1,
+                    run_time=2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
@@ -188,25 +187,25 @@ class Trapecios(Scene):
             self.play(
                 Transform(
                     traps[0], traps[i],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     areas[0][1], areas[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     errores[0][1], errores[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     ns[0][1], ns[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
@@ -229,7 +228,6 @@ class Simpson(Scene):
             return -0.25*(x-3)**4 + 3*(x-3)**2 + x - 2
     
         graph = ax.plot(lambda x: f(x), x_range=[-1, 7], color=RED)
-        ejex = ax.plot(lambda x: 0, x_range=[-1, 7], color=BLUE)
         self.play(Create(graph))
 
         t = MathTex(r"f(x) = -0.25(x-3)^4 + 3(x-3)^2 + x - 2")
@@ -288,25 +286,25 @@ class Simpson(Scene):
             self.play(
                 Transform(
                     polys[0], polys[i],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     areas[0][1], areas[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     errores[0][1], errores[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),
                 Transform(
                     ns[0][1], ns[i][1],
-                    run_time=1,
+                    run_time = 2,
                     rate_func=smooth,
                     lag_ratio=0.5,
                 ),

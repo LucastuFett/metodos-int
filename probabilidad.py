@@ -4,7 +4,7 @@ from scipy import integrate
 from scipy.stats import norm
 
 
-class Trapecios(Scene):
+class Messi(Scene):
     def construct(self):
 
         valorA = input("Ingrese el valor A: ")
