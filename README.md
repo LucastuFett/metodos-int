@@ -16,7 +16,7 @@ Clonar el repositorio e instalar el administrador de paquetes Chocolatey:
   https://chocolatey.org/install
 ```
 
-Con Chocolatey instalado, correr los siguientes comandos (Python 3.8 en adelante):
+Con Chocolatey instalado, correr los siguientes comandos en un cmd como Administrador (Python 3.8 en adelante):
 
 ```bash
   choco install manimce
