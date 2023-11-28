@@ -30,4 +30,4 @@ Luego, en Visual Studio, instalar la extensión Manim Sideview:
   https://marketplace.visualstudio.com/items?itemName=Rickaym.manim-sideview
 ```
 
-Para compilar, dentro del archivo animacion.py, presionar el boton verde generado por la extensión, al lado del botón Run, y elegir la animación a compilar. Si ya se compiló una animación y se quiere ver otra, presionar en el botón azul con una cámara debajo del video para cambiar de animación.
+Para compilar, dentro del archivo que contenga la animación, presionar el boton verde generado por la extensión, al lado del botón Run, y elegir la animación a compilar. Si ya se compiló una animación y se quiere ver otra, presionar en el botón azul con una cámara debajo del video para cambiar de animación.
