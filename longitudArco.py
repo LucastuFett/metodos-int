@@ -130,7 +130,7 @@ class Pato(Scene):
             FadeOut(ns[0]),
             FadeOut(der),
             FadeOut(areaDer),
-            Transform(ar,MathTex(fr"Longitud = {round(trapecio,3)}").scale(1).set_x(0).set_y(3).set_z_index(3)),
+            Transform(ar,MathTex(fr"Longitud \approx {round(trapecio,3)}").scale(1).set_x(0).set_y(3).set_z_index(3)),
         )
 
         self.wait(5)

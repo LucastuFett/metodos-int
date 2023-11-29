@@ -186,14 +186,16 @@ class Messi(Scene):
 
         self.wait(1)
 
-        pos = MathTex(fr"P({{{valorA}}}\le x<{{{valorB}}})={{{trapecio}}}")
+        pos = MathTex(fr"P({{{valorA}}}\le x<{{{valorB}}})\approx{{{trapecio}}}")
         pos.scale(0.8)
         pos.set_x(-3)
         pos.set_y(2) 
-        self.play(Unwrite(xa))
-        self.play(Unwrite(xb))
-        self.play(Unwrite(za))
-        self.play(Unwrite(zb))
+        self.play(
+            Unwrite(xa),
+            Unwrite(xb),
+            Unwrite(za),
+            Unwrite(zb)
+        )
         self.play(Write(pos))
 
         self.wait(5)
